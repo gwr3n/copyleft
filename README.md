@@ -12,6 +12,7 @@ The `copyleft` LaTeX package can be used in a latex manuscript by leveraging com
 The `copyleft` environment can be used to enclose and annotate blocks of copyleft material in a LaTeX document
 
 #### Example
+The following LaTeX code can be stored into a file `knapsack.tex`, which can be then embedded into a LaTeX document via command `\input{knapsack.tex}`.
 ```
 \begin{copyleft}
 {Roberto Rossi}                                        % Author
