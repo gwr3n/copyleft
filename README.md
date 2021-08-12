@@ -45,4 +45,6 @@ to include in the knapsack.
 The `\printcopyleft` command can be used at the end of a document to print a list of copyleft credits compiled from the annotations in the blocks of copyleft material in a LaTeX document.
 
 #### Example
+The result of the `\printcopyleft` command for the above example is the following.
+
 ![The compiled example](img/credits.png)
