@@ -38,5 +38,11 @@ to include in the knapsack.
 \end{copyleft}
 ```
 
+[comment]: # (https://quicklatex.com/)
+![The compiled example](img/knapsack.png)
+
 ### The `\printcopyleft` command
 The `\printcopyleft` command can be used at the end of a document to print a list of copyleft credits compiled from the annotations in the blocks of copyleft material in a LaTeX document.
+
+#### Example
+![The compiled example](img/credits.png)
