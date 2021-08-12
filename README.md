@@ -1,5 +1,5 @@
 # copyleft
-A latex package for embedding copyleft material in a document.
+A LaTeX package for embedding copyleft material in a LaTeX document.
 
 ## Usage
 The `copyleft` LaTeX package can be used in a latex manuscript by leveraging command
