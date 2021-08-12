@@ -1,0 +1,50 @@
+% copyleft.sty  ver 1.0    07-Aug-2021   Roberto Rossi   robros@gmail.com
+% Copyright 2021 Roberto Rossi, Edinburgh, UK.
+% This program can be used, distributed, and modified under the terms
+% of the LaTeX Project Public License, version 2 or later.
+%
+% An environment that allows a user to annotate copyleft material in a
+% \LaTeX{} document. Annotations include: author, title, source, and
+% licence information. 
+%
+% Usage:    
+% \begin{copyleft}{Author}{Title}{Source}{License}
+%    Open source material.
+% \end{copyleft}
+%
+% \printcopyleft    generates the list of copyleft attributions.
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{copyleft}[2021/08/07 Copyleft Package]
+
+\RequirePackage{etoolbox}
+
+\def\copyleftlist{}%
+\listadd{\copyleftlist}{}% Initialize list
+
+\newrobustcmd{\myexpandingcommand}[1]{%
+\listgadd{\copyleftlist}{#1}% Add an element
+}%
+
+% Macro showing the current list element%
+\newrobustcmd{\showlist}[1]{%
+#1%
+}%
+
+\newcommand\copyleftsource{}
+\newcommand\copyleftlicence{}
+\newenvironment{copyleft}[4]{
+% Four arguments: title, author, source, license
+% https://creativecommons.org/use-remix/attribution/
+\expandafter\myexpandingcommand
+\expandafter{#1. #2. #3. #4.}
+}{}
+
+\newcommand{\printcopyleft}{%
+  \section*{Credits}
+  This manuscript embeds copyleft material 
+  from the following sources.
+  \forlistloop{\showlist\\\\}{\copyleftlist}
+}
+
+\endinput
