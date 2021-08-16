@@ -17,7 +17,7 @@ The following LaTeX code can be stored into a file `knapsack.tex`, which can be 
 \begin{copyleft}
 {Roberto Rossi}                                        % Author
 {Knapsack Problem}                                     % Title
-{\url{https://github.com/.../knapsack.tex}}            % Source
+{\url{https://github.com/gwr3n/tex/knapsack.tex}}      % Source
 {Creative Commons Attribution 2.0 Generic (CC BY 2.0)} % License
 
 Given a set of $n$ items numbered from 1 up to $n$, 
