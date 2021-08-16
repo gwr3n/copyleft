@@ -15,10 +15,10 @@ The `copyleft` environment can be used to enclose and annotate blocks of copylef
 The following LaTeX code can be stored into a file `knapsack.tex`, which can be then embedded into a LaTeX document via command `\input{knapsack.tex}`.
 ```
 \begin{copyleft}
-{Roberto Rossi}                                        % Author
-{Knapsack Problem}                                     % Title
-{\url{https://github.com/gwr3n/tex/knapsack.tex}}      % Source
-{Creative Commons Attribution 2.0 Generic (CC BY 2.0)} % License
+{Roberto Rossi}                                                                % Author
+{Knapsack Problem}                                                             % Title
+{\url{https://raw.githubusercontent.com/gwr3n/copyleft/main/tex/knapsack.tex}} % Source     
+{Creative Commons Attribution 2.0 Generic (CC BY 2.0)}                         % License
 
 Given a set of $n$ items numbered from 1 up to $n$, 
 each with a weight $w_i$ and a value $v_i$, 
