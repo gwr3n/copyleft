@@ -1,6 +1,8 @@
 # copyleft
 A LaTeX package for embedding copyleft material in a LaTeX document.
 
+R. Rossi, "[Curatio et innovatio](http://arxiv.org/abs/2108.13802)", arXiv:2108.13802 [cs.DL], University of Edinburgh, technical report 2021
+
 ## Usage
 The `copyleft` LaTeX package can be used in a latex manuscript by leveraging command
 ```
